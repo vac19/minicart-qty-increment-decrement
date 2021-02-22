@@ -31,14 +31,14 @@ Upon clicking any of button/links update button shows individualy.
 - vashishtha chauhan / Salecto
 
 ### Install module
-1. Run `composer require salecto1/magento2-catalog-ko`
+1. Run `composer require salecto1/magento2-minicart-increment-decrement`
 2. Run `php bin/magento setup:upgrade`
 3. Run `php bin/magento setup:di:compile`
 4. Run `php bin/magento s:s:d da_DK en_US`
 5. Run `php bin/magento c:c`
 
 ### Uninstall module
-1. Run `composer remove salecto1/magento2-catalog-ko`
+1. Run `composer remove salecto1/magento2-minicart-increment-decrement`
 2. Run `php bin/magento setup:di:compile`
 3. Run `php bin/magento s:s:d da_DK en_US`
 4. Run `php bin/magento c:c`
