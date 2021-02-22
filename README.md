@@ -47,7 +47,7 @@ Upon clicking any of button/links update button shows individualy.
 ## How to:
 
 # Step 1:
-`` <div class="details-qty qty">
+` <div class="details-qty qty">
     <label class="label" data-bind="i18n: 'Qty', attr: {
            for: 'cart-item-'+item_id+'-qty'}"></label>
     <a href="#" data-bind="attr: {'data-cart-item': item_id}"
@@ -77,4 +77,4 @@ Upon clicking any of button/links update button shows individualy.
             style="display: none">
         <span data-bind="i18n: 'Update'"></span>
     </button>
-</div>``
+</div>`
