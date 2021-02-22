@@ -47,7 +47,5 @@ Upon clicking any of button/links update button shows individualy.
 ### Three Files to change
 
 `vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html`
-
 `vendor/magento/module-checkout/view/frontend/web/js/view/minicart.js`
-
 `vendor/magento/module-checkout/view/frontend/web/js/sidebar.js`
