@@ -46,9 +46,7 @@ Upon clicking any of button/links update button shows individualy.
 # Additional developer notes
 ## How to:
 
-# Step 1: 
-
-`vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html`
+### Step 1: 
 
 <div class="details-qty qty">
     <label class="label" data-bind="i18n: 'Qty', attr: {
@@ -81,3 +79,4 @@ Upon clicking any of button/links update button shows individualy.
         <span data-bind="i18n: 'Update'"></span>
     </button>
 </div>
+`vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html`
