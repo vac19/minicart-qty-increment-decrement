@@ -46,8 +46,11 @@ Upon clicking any of button/links update button shows individualy.
 # Additional developer notes
 ## How to:
 
-# Step 1:
-` <div class="details-qty qty">
+# Step 1: 
+
+`vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html`
+
+<div class="details-qty qty">
     <label class="label" data-bind="i18n: 'Qty', attr: {
            for: 'cart-item-'+item_id+'-qty'}"></label>
     <a href="#" data-bind="attr: {'data-cart-item': item_id}"
@@ -77,4 +80,55 @@ Upon clicking any of button/links update button shows individualy.
             style="display: none">
         <span data-bind="i18n: 'Update'"></span>
     </button>
-</div>`
+</div>
+
+# Step 2:
+
+`vendor/magento/module-checkout/view/frontend/web/js/view/minicart.js`
+
+'button': {
+            'checkout': '#top-cart-btn-checkout',
+            'remove': '#mini-cart a.action.delete',
+            
+            'increacseqty':'#mini-cart a.action.increase-qty',
+            'decreaseqty':'#mini-cart a.action.decrease-qty',
+            
+            'close': '#btn-minicart-close'
+        },
+
+`button function is already there, you just need to add "increacseqty and decreaseqty" lines into the function.`
+
+# Step 3:
+
+`vendor/magento/module-checkout/view/frontend/web/js/sidebar.js`
+
+
+events['click ' + this.options.button.increacseqty] = function (event) {
+    self._increaseItemQty($(event.currentTarget));
+};
+events['click ' + this.options.button.decreaseqty] = function (event) {
+    self._decreaseItemQty($(event.currentTarget));
+};
+
+`Put Above code in within events`
+
+_increaseItemQty: function (elem) {
+    var itemId = elem.data('cart-item');
+    var obj = $('#cart-item-' + itemId + '-qty');
+    var currentQty = obj.val();
+    var newAdd = parseInt(currentQty) + parseInt(1);
+    obj.val(newAdd);
+    obj.attr('data-item-qty', newAdd);           
+},
+_decreaseItemQty: function (elem) {
+    var itemId = elem.data('cart-item');
+    var obj = $('#cart-item-' + itemId + '-qty');
+    var currentQty = obj.val();
+    if (currentQty > 1) {
+        var newAdd = parseInt(currentQty) - parseInt(1);
+        obj.val(newAdd);
+        obj.attr('data-item-qty', newAdd);
+    }
+},
+
+`Put Above code in within functions`
