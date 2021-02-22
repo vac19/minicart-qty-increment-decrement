@@ -79,4 +79,4 @@ Upon clicking any of button/links update button shows individualy.
         <span data-bind="i18n: 'Update'"></span>
     </button>
 </div>
-`vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html`
+
