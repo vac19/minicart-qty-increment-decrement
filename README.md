@@ -6,12 +6,12 @@ Upon clicking any of button/links update button shows individualy.
 
 ## Composer install
 
-- `composer config repositories.reponame vcs https://github.com/vac19/CatalogKO`
-- `composer require salecto1/magento2-catalog-ko`
+- `composer config repositories.reponame vcs https://github.com/vac19/minicart-qty-increment-decrement`
+- `composer require salecto1/magento2-minicart-increment-decrement`
 
 ## Composer uninstall
 
-- `composer remove salecto1/magento2-catalog-ko`
+- `composer remove salecto1/magento2-minicart-increment-decrement`
 
 ## Preview will be added
 
