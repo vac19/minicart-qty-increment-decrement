@@ -47,36 +47,4 @@ Upon clicking any of button/links update button shows individualy.
 ## How to:
 
 ### Step 1: 
-
-<div class="details-qty qty">
-    <label class="label" data-bind="i18n: 'Qty', attr: {
-           for: 'cart-item-'+item_id+'-qty'}"></label>
-    <a href="#" data-bind="attr: {'data-cart-item': item_id}"
-       class="action decrease-qty">
-        <span>-</span>
-    </a>
-    <input data-bind="attr: {
-           id: 'cart-item-'+item_id+'-qty',
-           'data-cart-item': item_id,
-           'data-item-qty': qty,
-           'data-cart-item-id': product_sku
-           }, value: qty"
-           type="number"
-           size="4"
-           class="item-qty cart-item-qty"
-           maxlength="12"/>
-    <a href="#" data-bind="attr: {'data-cart-item': item_id}"
-       class="action increase-qty">
-        <span>+</span>
-    </a>
-    <button data-bind="attr: {
-           id: 'update-cart-item-'+item_id,
-           'data-cart-item': item_id,
-           title: $t('Update')
-           }"
-            class="update-cart-item"
-            style="display: none">
-        <span data-bind="i18n: 'Update'"></span>
-    </button>
-</div>
-
+# vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html
