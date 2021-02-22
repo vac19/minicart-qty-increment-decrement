@@ -44,7 +44,10 @@ Upon clicking any of button/links update button shows individualy.
 4. Run `php bin/magento c:c`
 
 # Additional developer notes
-## How to:
+# Three Files to change
 
-### Step 1: 
-# vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html
+`vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html`
+
+`vendor/magento/module-checkout/view/frontend/web/js/view/minicart.js`
+
+`vendor/magento/module-checkout/view/frontend/web/js/sidebar.js
