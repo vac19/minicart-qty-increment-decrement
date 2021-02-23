@@ -1,4 +1,4 @@
-# Catalog/Ko
+# Minicart_IncrementDecrement
 
 KnockOut.js practice module. 
 Appends `Increment and Decrement` links around Qty Input at minicart popup.
