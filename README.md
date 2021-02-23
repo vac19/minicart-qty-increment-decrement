@@ -52,4 +52,5 @@ Upon clicking any of button/links update button shows individualy.
 
 `vendor/magento/module-checkout/view/frontend/web/js/sidebar.js`
 
-## Reference: `https://magento.stackexchange.com/questions/197740/update-quantity-in-minicart`
+## Reference: 
+`https://magento.stackexchange.com/questions/197740/update-quantity-in-minicart`
