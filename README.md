@@ -15,7 +15,7 @@ Upon clicking any of button/links update button shows individualy.
 
 ## Preview will be added
 
-![timer-in-categoryPage](/readme-images/Timer-at-categoryPage.png "timer-in-categoryPage")
+![minicart](/readme-images/minicart.png "minicart 'qty' increment/decrement")
 
 
 ## Settings
