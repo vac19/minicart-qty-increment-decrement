@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Knockout.js Products Module registration.
+ * @category  Knockout.js Products
+ * @package   Ko_Prod
+ * @author    vashishtha
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="knockout" frontName="knockout">
+            <module name="Ko_Prod" />
+        </route>
+    </router>
+</config>

@@ -1,26 +1,26 @@
-# Minicart_IncrementDecrement
+# Catalog/Ko
 
 KnockOut.js practice module. 
-Appends `Increment and Decrement` links around Qty Input at minicart popup.
-Upon clicking any of button/links update button shows individualy.
+Displays Products using knockout.js on custom page.
+URL: `http://127.0.0.1/knockout`
 
 ## Composer install
 
-- `composer config repositories.reponame vcs https://github.com/vac19/minicart-qty-increment-decrement`
-- `composer require salecto1/magento2-minicart-increment-decrement`
+- `composer config repositories.reponame vcs https://github.com/vac19/CatalogKO`
+- `composer require salecto1/magento2-catalog-ko`
 
 ## Composer uninstall
 
-- `composer remove salecto1/magento2-minicart-increment-decrement`
+- `composer remove salecto1/magento2-catalog-ko`
 
 ## Preview will be added
 
-![minicart](/readme-images/minicart.png "Increment decrement 'qty' in minicart")
+![products](/readme-images/products.png "products on custom page")
 
 
 ## Settings
 
-- Option `No options` - Practice Module
+- Option `will be updated ..` - no settings
 
 ## Known issues
 
@@ -31,26 +31,17 @@ Upon clicking any of button/links update button shows individualy.
 - vashishtha chauhan / Salecto
 
 ### Install module
-1. Run `composer require salecto1/magento2-minicart-increment-decrement`
+1. Run `composer require salecto1/magento2-ko-products`
 2. Run `php bin/magento setup:upgrade`
 3. Run `php bin/magento setup:di:compile`
 4. Run `php bin/magento s:s:d da_DK en_US`
 5. Run `php bin/magento c:c`
 
 ### Uninstall module
-1. Run `composer remove salecto1/magento2-minicart-increment-decrement`
+1. Run `composer remove salecto1/magento2-ko-products`
 2. Run `php bin/magento setup:di:compile`
 3. Run `php bin/magento s:s:d da_DK en_US`
 4. Run `php bin/magento c:c`
 
-# Additional developer notes
-### Three Files to change
-
-`vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html`
-
-`vendor/magento/module-checkout/view/frontend/web/js/view/minicart.js`
-
-`vendor/magento/module-checkout/view/frontend/web/js/sidebar.js`
-
-## Reference: 
-`https://magento.stackexchange.com/questions/197740/update-quantity-in-minicart`
+### Additional developer notes
+Reference URL `https://magenest.com/en/how-to-use-knockout-js-on-a-magento-2-frontend-page/`

@@ -1,12 +1,12 @@
 <?php
 /**
- * Minicart IncrementDecrement Module registration.
- * @category  Minicart KnockOut.js
- * @package   Minicart_IncrementDecrement
+ * Knockout.js Products Module registration.
+ * @category  Knockout.js Products
+ * @package   Ko_Prod
  * @author    vashishtha
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Minicart_IncrementDecrement',
+    'Ko_Prod',
     __DIR__
 );
