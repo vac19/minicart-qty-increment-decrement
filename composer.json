@@ -1,5 +1,5 @@
 {
-  "name": "salecto1/magento2-ko-products",
+  "name": "salecto1/magento2-minicart-increment-decrement",
   "description": "Catalog KnockOut Js Example Module",
   "type": "magento2-module",
   "version": "1.0.0",
@@ -17,7 +17,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Ko\\Prod\\": ""
+      "Minicart\\IncrementDecrement\\": ""
     }
   }
 }

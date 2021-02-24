@@ -1,26 +1,26 @@
 # Catalog/Ko
 
 KnockOut.js practice module. 
-Displays Products using knockout.js on custom page.
-URL: `http://127.0.0.1/knockout`
+Appends `Increment and Decrement` links around Qty Input at minicart popup.
+Upon clicking any of button/links update button shows individualy.
 
 ## Composer install
 
-- `composer config repositories.reponame vcs https://github.com/vac19/CatalogKO`
-- `composer require salecto1/magento2-catalog-ko`
+- `composer config repositories.reponame vcs https://github.com/vac19/minicart-qty-increment-decrement`
+- `composer require salecto1/magento2-minicart-increment-decrement`
 
 ## Composer uninstall
 
-- `composer remove salecto1/magento2-catalog-ko`
+- `composer remove salecto1/magento2-minicart-increment-decrement`
 
 ## Preview will be added
 
-![products](/readme-images/products.png "products on custom page")
+![timer-in-categoryPage](/readme-images/Timer-at-categoryPage.png "timer-in-categoryPage")
 
 
 ## Settings
 
-- Option `will be updated ..` - no settings
+- Option `No options` - Practice Module
 
 ## Known issues
 
@@ -31,17 +31,23 @@ URL: `http://127.0.0.1/knockout`
 - vashishtha chauhan / Salecto
 
 ### Install module
-1. Run `composer require salecto1/magento2-ko-products`
+1. Run `composer require salecto1/magento2-minicart-increment-decrement`
 2. Run `php bin/magento setup:upgrade`
 3. Run `php bin/magento setup:di:compile`
 4. Run `php bin/magento s:s:d da_DK en_US`
 5. Run `php bin/magento c:c`
 
 ### Uninstall module
-1. Run `composer remove salecto1/magento2-ko-products`
+1. Run `composer remove salecto1/magento2-minicart-increment-decrement`
 2. Run `php bin/magento setup:di:compile`
 3. Run `php bin/magento s:s:d da_DK en_US`
 4. Run `php bin/magento c:c`
 
-### Additional developer notes
-Reference URL `https://magenest.com/en/how-to-use-knockout-js-on-a-magento-2-frontend-page/`
+# Additional developer notes
+### Three Files to change
+
+`vendor/magento/module-checkout/view/frontend/web/template/minicart/item/default.html`
+
+`vendor/magento/module-checkout/view/frontend/web/js/view/minicart.js`
+
+`vendor/magento/module-checkout/view/frontend/web/js/sidebar.js`
